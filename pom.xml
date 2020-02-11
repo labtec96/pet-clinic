@@ -36,7 +36,7 @@
         </plugins>
     </build>
     <scm>
-        <developerConnection>scm:git:github.com/labtec96/pet-clinic.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/labtec96/pet-clinic.git</developerConnection>
       <tag>pet-clinic-1.0.XX</tag>
   </scm>
 </project>
