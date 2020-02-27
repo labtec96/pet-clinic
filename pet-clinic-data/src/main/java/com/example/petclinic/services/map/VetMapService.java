@@ -12,11 +12,11 @@ import java.util.Set;
  * Created by ch on 2020-02-12
  */
 @Service
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService{
+public class VetMapService extends AbstractMapService<Vet, Long> implements VetService{
 
     private final SpecialityService specialityService;
 
-    public VetServiceMap(SpecialityService specialityService) {
+    public VetMapService(SpecialityService specialityService) {
         this.specialityService = specialityService;
     }
 
@@ -26,7 +26,7 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
     }
 
     @Override
-    public Vet findAllById(Long id) {
+    public Vet findById(Long id) {
         return super.findById(id);
     }
 
