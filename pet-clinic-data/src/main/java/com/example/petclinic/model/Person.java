@@ -1,10 +1,18 @@
 package com.example.petclinic.model;
 
+import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
+
 /**
  * Created by ch on 2020-02-11
  */
+@MappedSuperclass
 public class Person extends BaseEntity{
+
+    @Column(name = "first_name")
     private String firstName;
+
+    @Column(name = "second_name")
     private String secondName;
 
     public String getFirstName() {
